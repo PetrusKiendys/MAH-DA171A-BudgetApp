@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.kiendys.petrus.da171a.uppg3.budgetapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/mario_coin_original"
+        android:label="@string/global_app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MenuActivity"
+            android:label="@string/global_launcher_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.IncomeActivity"
+            android:label="@string/global_app_name" >
+        </activity>
+        <activity
+            android:name=".activities.ExpensesActivity"
+            android:label="@string/global_app_name" >
+        </activity>
+        <activity
+            android:name=".activities.ConsumptionActivity"
+            android:label="@string/global_app_name" >
+        </activity>
+        <activity
+            android:name=".activities.DistributionActivity"
+            android:label="@string/global_app_name" >
+        </activity>
+        <activity
+            android:name=".activities.ListActivity"
+            android:label="@string/global_app_name" >
+        </activity>
+    </application>
+
+</manifest>

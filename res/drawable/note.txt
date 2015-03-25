@@ -1,0 +1,5 @@
+'mario_coin' images were fetched from the web and edited with GIMP.
+The original image can be fetched from these websites:
+	http://www.mitchelaneous.com/wp-content/uploads/2009/01/yellow-coin.png
+	http://thegamepop.com/wp-content/uploads/2012/07/NewSuperMarioBros-Coin1.png
+	http://images.wikia.com/fantendo/images/c/ce/Coin.jpg

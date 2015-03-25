@@ -1,0 +1,100 @@
+<resources>
+    <!-- Language: Swedish -->
+
+    <!-- General strings used globally by the app -->
+    <string name="global_app_name">BudgetApp</string>
+    <string name="global_launcher_name">DA171A - uppg3</string>
+    <string name="menu_settings">Settings</string>
+    <string name="global_title_activity_menu">MenuActivity</string>
+    <string name="global_gui_title">DA171A BudgetApp</string>
+    
+    <!-- Name of the "sub-activities" -->
+    <string name="gui_activities_income">Inkomster</string>
+    <string name="gui_activities_expenses">Utgifter</string>
+    <string name="gui_activities_consumption">Förbrukning</string>
+    <string name="gui_activities_distribution">Fördelning</string>
+    <string name="gui_activities_list">Lista</string>
+    
+    <!-- Used by IncomeActivity and its corresponding layout xml -->
+    <string name="gui_activity_menu_author">2012 Petrus Kiendys</string>
+    
+    <!-- Used by IncomeActivity and its corresponding layout xml -->
+    <string name="gui_activity_income_date">Datum</string>
+    <string name="gui_activity_income_income">Inkomst</string>
+    <string name="gui_activity_income_pick_date">Välj datum</string>
+    <string name="gui_activity_income_category">Kategori</string>
+    <string name="gui_activity_income_enter_income">Ange inkomst</string>
+    <string name="gui_activity_income_save">Spara</string>
+    <string-array name="gui_activity_income_category_array">
+        <item>Lön</item>
+        <item>Privat inbetalning</item>
+        <item>Extraknäck</item>
+        <item>Bidrag</item>
+        <item>Återbäring</item>
+        <item>Övrigt</item>
+    </string-array>
+    <string name="gui_activity_income_success_adding_entry">Din inkomst har lagts till!</string>
+    <string name="gui_activity_income_failed_adding_entry">Något gick fel! Din inkomst lades inte till!</string>
+    
+    
+    <!-- Used by ExpensesActivity and its corresponding layout xml -->
+    <string name="gui_activity_expenses_date">Datum</string>
+    <string name="gui_activity_expenses_expenses">Utgift</string>
+    <string name="gui_activity_expenses_pick_date">Välj datum</string>
+    <string name="gui_activity_expenses_category">Kategori</string>
+    <string name="gui_activity_expenses_enter_expenses">Ange utgift</string>
+    <string name="gui_activity_expenses_save">Spara</string>
+    <string-array name="gui_activity_expenses_category_array">
+        <item>Livsmedel</item>
+        <item>Kläder</item>
+        <item>Fritid och Nöjen</item>
+        <item>Mobiltelefon</item>
+        <item>Vård/Tandvård</item>
+        <item>Bil</item>
+        <item>Semester</item>
+        <item>Sparande</item>        
+        <item>Försäkring</item>
+        <item>Skatt</item>
+        <item>Avbetalning</item>
+        <item>Abonnemang</item>
+        <item>Hyra</item>
+        <item>Amortering</item>
+        <item>Ränta</item>
+        <item>Avgift</item>
+        <item>Böter</item>
+        <item>Övrigt</item>
+    </string-array>
+    <string name="gui_activity_expenses_success_adding_entry">Din utgift har lagts till!</string>
+    <string name="gui_activity_expenses_failed_adding_entry">Något gick fel! Din utgift lades inte till!</string>
+    
+    
+    <!-- Used by ConsumptionActivity and its corresponding layout xml -->
+    <string name="gui_activity_consumption_food">Livsmedel</string>
+    <string name="gui_activity_consumption_leisure">Fritid och Nöjen</string>
+    <string name="gui_activity_consumption_phone">Mobiltelefon</string>
+    <string name="gui_activity_consumption_car">Bil</string>
+    <string name="settings_monthly_limit_food">4000</string>
+    <string name="settings_monthly_limit_leisure">1500</string>
+    <string name="settings_monthly_limit_phone">300</string>
+    <string name="settings_monthly_limit_car">3000</string>
+    
+    <!-- Used by ListActivity and its corresponding layout xml -->
+    <string name="gui_activity_list_show_curr_month">Visa denna månad</string>
+    <string name="gui_activity_list_show_all">Visa allt</string>
+    <string name="gui_activity_list_date">Datum</string>
+    <string name="gui_activity_list_type">Typ</string>
+    <string name="gui_activity_list_amount">Summa</string>
+    <string name="gui_activity_list_date_placeholder">Datum_temp</string>
+    <string name="gui_activity_list_type_placeholder">Typ_temp</string>
+    <string name="gui_activity_list_amount_placeholder">Summa_temp</string>
+    
+    
+    <!-- Used by the database -->
+    <string name="db_type_income">INKOMST</string>
+    <string name="db_type_expense">UTGIFT</string>
+    
+    <!-- Error messages -->
+    <string name="error_invalid_amount_income">Du glömde skriva in något i "Inkomst" rutan!</string>
+    <string name="error_invalid_amount_expenses">Du glömde skriva in något i "Utgift" rutan!</string>
+    
+</resources>

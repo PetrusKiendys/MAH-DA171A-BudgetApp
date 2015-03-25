@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tvIncomeActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/gui_activities_income"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvIncomeActivityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIncomeActivityTitle"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/tvIncomeActivityTitle"
+        android:layout_marginRight="20dp"
+        android:text="@string/gui_activity_income_date" />
+    
+    <TextView
+        android:id="@+id/tvIncomeActivityIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIncomeActivityDate"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/tvIncomeActivityTitle"
+        android:layout_marginRight="20dp"
+        android:text="@string/gui_activity_income_income" />
+
+    <Button
+        android:id="@+id/btnIncomeActivityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tvIncomeActivityIncome"
+        android:layout_alignLeft="@+id/tvIncomeActivityTitle"
+        android:text="@string/gui_activity_income_pick_date"
+        android:onClick="onClickDate" />
+
+    <EditText
+        android:id="@+id/etIncomeActivityIncome"
+        android:hint="@string/gui_activity_income_enter_income"
+        android:inputType="number"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnIncomeActivityDate"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnIncomeActivityDate"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvIncomeActivityCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvIncomeActivityIncome"
+        android:layout_below="@+id/tvIncomeActivityIncome"
+        android:layout_marginTop="10dp"
+        android:text="@string/gui_activity_income_category" />
+
+    <Spinner
+        android:id="@+id/spIncomeActivityCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etIncomeActivityIncome"
+        android:layout_below="@+id/etIncomeActivityIncome" />
+
+    <Button
+        android:id="@+id/btnIncomeActivitySave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spIncomeActivityCategory"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/gui_activity_income_save"
+        android:onClick="onClickSave" />
+
+</RelativeLayout>

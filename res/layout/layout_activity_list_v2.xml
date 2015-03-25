@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <TextView
+        android:id="@+id/tvListActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/gui_activities_list"
+        android:textSize="20sp" />
+    
+    <LinearLayout
+        android:id="@+id/layoutListActivityButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="110dp" >
+
+        <Button
+            android:id="@+id/btnListActivityShowCurrMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gui_activity_list_show_curr_month"
+            android:onClick="onClickShowCurrMonth" />
+
+        <Button
+            android:id="@+id/btnListActivityShowAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gui_activity_list_show_all"
+            android:onClick="onClickShowAll" />
+    </LinearLayout>
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp" >
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_date" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_type" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_amount" />
+        </TableRow>
+    </TableLayout>
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvListActivityDbDate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_date_placeholder" />
+
+            <TextView
+                android:id="@+id/tvListActivityDbType"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_type_placeholder" />
+
+            <TextView
+                android:id="@+id/tvListActivityDbAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/gui_activity_list_amount_placeholder" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

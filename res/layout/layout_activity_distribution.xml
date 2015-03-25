@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tvDistributionActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/gui_activities_distribution"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/tvDistributionActivityPieContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDistributionActivityTitle"
+        android:layout_marginTop="20sp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+        
+        <se.kiendys.petrus.da171a.uppg3.budgetapp.PieChartView
+			android:id="@+id/viewPieChart"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

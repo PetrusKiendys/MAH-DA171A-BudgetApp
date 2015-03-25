@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stacked_coins" >
+
+    <TextView
+        android:id="@+id/tvMenuActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/global_gui_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#95C98D" /> <!-- this is where you set the color of the TextView -->
+										<!-- sp is the unit of size -->
+    <Button
+        android:id="@+id/btnMenuActivityIncome"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvMenuActivityTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/gui_activities_income"
+        android:onClick="onClickIncome" />
+    
+    <Button
+        android:id="@+id/btnMenuActivityExpenses"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnMenuActivityIncome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/gui_activities_expenses"
+        android:onClick="onClickExpenses" />
+    
+    <Button
+        android:id="@+id/btnMenuActivityConsumption"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnMenuActivityExpenses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/gui_activities_consumption"
+        android:onClick="onClickConsumption" />
+    
+    <Button
+        android:id="@+id/btnMenuActivityDistribution"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnMenuActivityConsumption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/gui_activities_distribution"
+        android:onClick="onClickDistribution" />
+    
+    <Button
+        android:id="@+id/btnMenuActivityList"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnMenuActivityDistribution"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/gui_activities_list"
+        android:onClick="onClickList" />
+
+    <TextView
+        android:id="@+id/tvMenuActivityAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickAuthor"
+        android:clickable="true"
+        android:text="@string/gui_activity_menu_author"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgMenuActivityKopimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvMenuActivityAuthor"
+        android:layout_toLeftOf="@+id/tvMenuActivityAuthor"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/kopimi_mini"
+        tools:ignore="ContentDescription" />	
+
+</RelativeLayout>

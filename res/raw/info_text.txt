@@ -1,0 +1,3 @@
+<h3>DA171A BudgetApp</h3>
+Version 0.1<br>
+[kopimi] 2012 Petrus Kiendys
